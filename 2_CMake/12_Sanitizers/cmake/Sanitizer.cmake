@@ -6,7 +6,7 @@ function(add_sanitizer_flags)
 
     if(CMAKE_CXX_COMPILER_ID MATCHES "Clang" OR CMAKE_CXX_COMPILER_ID MATCHES "GNU")
         add_compile_options("-fno-omit-frame-pointer")
-        add_link_options("fno-omit-frame-pointer")
+        add_link_options("-fno-omit-frame-pointer")
 
         if(ENABLE_SANITIZE_ADDR)
             add_compile_options("-fsanitize=address")
