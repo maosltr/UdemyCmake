@@ -13,6 +13,6 @@ cmake .. -DCOMPILE_EXECUTABLE=ON
 # build the whole project
 cmake --build .
 # OR build specific target (Building a target will automatically build the target dependencies)
-cmake --build . --target Library
-cmake --build . --target Executable
+cmake --build . --target Library | make Library
+cmake --build . --target Executable | make Executable
 ```
